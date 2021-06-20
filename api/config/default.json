@@ -1,0 +1,38 @@
+{
+  "host": "0.0.0.0",
+  "port": 3031,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 2000
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "T8gNPuESvte13cJzVuohQ7Aifg4=",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "mysql": {
+    "client": "mysql",
+    "connection": "mysql://tpadmin:tpAdmin!1234@database-1.ceeh8cuc6lkp.us-east-2.rds.amazonaws.com:3306/brain_gym"
+  },
+  "deployment": {
+    "ip": "http://localhost:3000"
+  }
+}

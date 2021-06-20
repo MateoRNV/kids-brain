@@ -1,0 +1,42 @@
+[
+  {
+    "description": "    Validating fields in sinup page",
+    "keyword": "Feature",
+    "name": "Signup Page",
+    "line": 1,
+    "id": "signup-page",
+    "tags": [],
+    "uri": "sigup.feature",
+    "elements": [
+      {
+        "id": "signup-page;creating-user",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Creating user",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I opened web page",
+            "result": {
+              "status": "undefined",
+              "duration": 53000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Fill all signup inputs",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
